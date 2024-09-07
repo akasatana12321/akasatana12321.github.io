@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>リンク集サイト</title>
+    <title>まとめ裏</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,31 +11,47 @@
     </header>
     <nav>
         <ul>
-            <li><a href="＃二次元">２次元</a></li>
-            <li><a href="＃三次元">３次元</a></li>
-            <li><a href="＃履歴">履歴</a></li>
+            <li><button class="tab-button" data-tab="matomeura">まとめ裏</button></li>
+            <li><button class="tab-button" data-tab="niji">２次元</button></li>
+            <li><button class="tab-button" data-tab="sanji">3次元</button></li>
+            <li><button class="tab-button" data-tab="other">その他</button></li>
+            <li><button class="tab-button" data-tab="history">履歴</button></li>
         </ul>
     </nav>
-    <section id="二次元">
-        <h2>２次元アダルトリンク集</h2>
+    <section id="matomeura" class="tab-content">
+        <h2>まとめ裏　アダルトリンク集</h2>
         <ul class="link-list">
-            <li><a href="#">２次元総合</a></li>
-            <li><a href="#">２次元動画一般</a></li>
-            <li><a href="#">２次元画像</a></li>
-            <li><a href="#">ボイス・ASMR</a></li>
+            <li><a href="#">リンク１</a></li>
+            <li><a href="#">リンク２</a></li>
         </ul>
     </section>
-    <section id="三次元">
+    <section id="sanji" class="tab-content hidden">
         <h2>３次元アダルトリンク集</h2>
         <ul class="link-list">
-            <li><a href="#">３次元総合</a></li>
-            <li><a href="#">３次元動画共有</a></li>
-            <li><a href="#">３次元動画F系</a></li>
-            <li><a href="#">３次元画像</a></li>
+            <li><a href="#">3次元総合</a></li>
+            <li><a href="#">3次元動画共有</a></li>
+            <li><a href="#">3次元動画F系</a></li>
+            <li><a href="#">3次元画像</a></li>
+        </ul>
+    </section>
+    <section id="other" class="tab-content hidden">
+        <h2>その他　アダルトリンク集</h2>
+        <ul class="link-list">
+            <li><a href="#">出会い</a></li>
+            <li><a href="#">アダルトグッズ</a></li>
+            <li><a href="#">ギャンブル</a></li>
+        </ul>
+    </section>
+    <section id="history" class="tab-content hidden">
+        <h2>履歴</h2>
+        <ul class="link-list">
+            <li><a href="#">更新履歴１</a></li>
+            <li><a href="#">更新履歴２</a></li>
         </ul>
     </section>
     <footer>
         <p>©　2010　まとめ裏</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
