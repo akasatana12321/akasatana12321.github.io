@@ -1,12 +1,13 @@
-document.querySelectorAll('.tab-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const tabId = this.dataset.tab;
-
-        document.querySelectorAll('.tab-content').forEach(content => {
-            content.classList.remove('active');
-        });
-
-        document.getElementById(tabId).classList.add('active');
+function showContent(sectionId) {
+    // 全てのセクションを隠す
+    var sections = document.querySelectorAll('.content');
+    sections.forEach(function(section) {
+        section.classList.add('hidden');
+        section.classList.remove('active');
     });
-});
+
+    // 選択されたセクションを表示
+    var activeSection = document.getElementById(sectionId);
+    activeSection.classList.remove('hidden');
+    activeSection.classList.add('active');
+}

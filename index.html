@@ -2,8 +2,6 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>まとめ裏</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,50 +10,56 @@
         <h1>まとめ裏</h1>
         <nav>
             <ul>
-                <li><a href="#" class="tab-link" data-tab="tab1">まとめ裏</a></li>
-                <li><a href="#" class="tab-link" data-tab="tab2">2次元</a></li>
-                <li><a href="#" class="tab-link" data-tab="tab3">3次元</a></li>
-                <li><a href="#" class="tab-link" data-tab="tab4">その他</a></li>
-                <li><a href="#" class="tab-link" data-tab="tab5">履歴</a></li>
+                <li onclick="showContent('matomeura')">まとめ裏</li>
+                <li onclick="showContent('2d')">2次元</li>
+                <li onclick="showContent('3d')">３次元</li>
+                <li onclick="showContent('other')">その他</li>
+                <li onclick="showContent('history')">履歴</li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="matomeura" class="content">
+            <h2>まとめ裏　アダルトリンク集</h2>
+            <div class="link-block">毎日絶妙に更新中！</div>
+            <div class="link-block">夏におすすめな出会いはコチラ！</div>
+            <div class="link-block">1919%もっこり保障！</div>
+        </section>
 
-    <section id="tab1" class="tab-content active">
-        <div class="link-group">
-            <a href="#" class="link-box">毎日絶妙に更新中！</a>
-            <a href="#" class="link-box">夏におススメな出会いはコチラ！</a>
-            <a href="#" class="link-box">1919%もっこり保障！</a>
-        </div>
-    </section>
-    <section id="tab2" class="tab-content">
-        <div class="link-group">
-            <a href="#" class="link-box">2次元総合</a>
-            <a href="#" class="link-box">2次元動画一般</a>
-            <a href="#" class="link-box">2次元画像</a>
-            <a href="#" class="link-box">ボイス・ASMR</a>
-        </div>
-    </section>
-    <section id="tab3" class="tab-content">
+        <section id="2d" class="content hidden">
+            <h2>２次元アダルトリンク集</h2>
+            <div class="link-block">２次元総合</div>
+            <div class="link-block">２次元動画一般</div>
+            <div class="link-block">２次元画像</div>
+            <div class="link-block">ボイス・ASMR</div>
+        </section>
 
-        <div class="link-group">
-            <a href="#" class="link-box">3次元総合</a>
-            <a href="#" class="link-box">3次元動画共有</a>
-            <a href="#" class="link-box">3次元動画F系</a>
-            <a href="#" class="link-box">3次元画像</a>
-        </div>
-    </section>
-    <section id="tab5" class="tab-content">
+        <section id="3d" class="content hidden">
+            <h2>３次元アダルトリンク集</h2>
+            <div class="link-block">三次元総合</div>
+            <div class="link-block">３次元動画共有</div>
+            <div class="link-block">３次元動画F系</div>
+            <div class="link-block">３次元画像</div>
+        </section>
 
-        <div class="link-group">
-            <a href="#" class="link-box">ポッカキット</a>
-        </div>
-    </section>
+        <section id="other" class="content hidden">
 
+            <h2>その他アダルトリンク集</h2>
+            <div class="link-block">その他総合</div>
+            <div class="link-block">ライブチャット</div>
+            <div class="link-block">風俗</div>
+        </section>
+
+        <section id="history" class="content hidden">
+
+            <h2>履歴</h2>
+            <div class="link-block">最近の履歴はありません</div>
+        </section>
+    </main>
     <footer>
-        <p>© 2010 まとめ裏</p>
+        <p>©　2010 まとめ裏</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
+
