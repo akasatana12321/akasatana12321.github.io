@@ -11,3 +11,15 @@ function showContent(sectionId) {
     activeSection.classList.remove('hidden');
     activeSection.classList.add('active');
 }
+
+function returnToAPEX() {
+    if (window.location.hash === '#APEX') {
+        showContent('APEX');
+    }
+}
+
+window.onload = function() {
+    if (window.location.hash === '#APEX') {
+        showContent('APEX');
+    }
+};
