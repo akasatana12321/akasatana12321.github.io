@@ -45,6 +45,10 @@ main {
     display: block;
 }
 
+.content.visible {
+    display: block;
+}
+
 .link-block {
     padding: 10px;
     margin: 10px 0;

@@ -1,73 +1,25 @@
 function showContent(sectionId) {
-    // 全てのセクションを隠す
     var sections = document.querySelectorAll('.content');
     sections.forEach(function(section) {
         section.classList.add('hidden');
-        section.classList.remove('active');
+        section.classList.remove('active', 'visible');
     });
 
-    // 選択されたセクションを表示
     var activeSection = document.getElementById(sectionId);
     activeSection.classList.remove('hidden');
     activeSection.classList.add('active');
 }
 
-function returnToAPEX() {
+function handleHashChange() {
     if (window.location.hash === '#APEX') {
         showContent('APEX');
+    } else if (window.location.hash === '#valorant') {
+        showContent('valorant')
     }
 }
 
 window.onload = function() {
-    if (window.location.hash === '#APEX') {
-        showContent('APEX');
-    }
+    handleHashChange();
 };
 
-function returnTovalo() {
-    if (window.location.hash === '#valorant') {
-        showContent('valorant');
-    }
-}
-
-window.onload = function() {
-    if (window.location.hash === '#valorant') {
-        showContent('valorant');
-    }
-};
-
-function returnToStreet() {
-    if (window.location.hash === '#Street') {
-        showContent('Street');
-    }
-}
-
-window.onload = function() {
-    if (window.location.hash === '#Street') {
-        showContent('Street');
-    }
-};
-
-function returnToOW2() {
-    if (window.location.hash === '#OW2') {
-        showContent('OW2');
-    }
-}
-
-window.onload =function() {
-    if (window.location.hash === '#OW2') {
-        showContent('OW2');
-    }
-};
-
-function returnToLoL() {
-    if (window.location.hash === '#LoL') {
-        showContent('LoL');
-    }
-}
-
-window.onload = function() {
-    if (window.location.hash === '#LoL') {
-        showContent('LoL');
-    }
-};  
+window.addEventListener('hashchange', handleHashChange);
